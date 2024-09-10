@@ -1,4 +1,3 @@
-
 # React Notion X Task
 
 This project is a simple task management application built using [react-notion-x](https://github.com/NotionX/react-notion-x), a powerful library for rendering Notion pages in React.
@@ -107,3 +106,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```

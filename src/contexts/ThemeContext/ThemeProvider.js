@@ -2,15 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { ThemeContext } from './ThemeContext';
 import { checkIsDarkSchemePreferred } from '../../utils/helpers';
 
-export const ThemeProvider = ({
-  children,
-}) => {
+export const ThemeProvider = ({ children }) => {
   const [isDark, setIsDark] = useState(checkIsDarkSchemePreferred());
 
   useEffect(() => {
-    const mediaQueryList = window.matchMedia(
-      '(prefers-color-scheme: dark)',
-    );
+    const mediaQueryList = window.matchMedia('(prefers-color-scheme: dark)');
 
     const handleChange = (event) => setIsDark(event.matches);
 

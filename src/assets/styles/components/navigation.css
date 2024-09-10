@@ -1,18 +1,18 @@
 .bq-react-notion-navigation {
-    --sub-menu-margin: 20px;
-    list-style: none;
+  --sub-menu-margin: 20px;
+  list-style: none;
 }
 
 .bq-react-notion-navigation-item a {
-    color: inherit;
-    outline: none;
-    text-decoration: none;
-    font-size: 13px
+  color: inherit;
+  outline: none;
+  text-decoration: none;
+  font-size: 13px;
 }
 
 .bq-react-notion-navigation-item.bq-react-notion-navigation--sub_header {
-    padding-inline-start: var(--sub-menu-margin);
+  padding-inline-start: var(--sub-menu-margin);
 }
 .bq-react-notion-navigation-item.bq-react-notion-navigation--sub_sub_header {
-    padding-inline-start: calc(var(--sub-menu-margin) * 2);
+  padding-inline-start: calc(var(--sub-menu-margin) * 2);
 }

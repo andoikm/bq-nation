@@ -26,21 +26,21 @@ const useNotionRenderFetch = () => {
           block: {
             ...acc.recordMap.block,
             ...curr.recordMap.block,
-          }
-        }
+          },
+        },
       }));
 
       setData(combineAll);
-    }
+    };
 
     fetchData();
 
     return () => {
       //Abort Request logic here
-    }
+    };
   }, [pageId]);
 
-  return {data};
+  return { data };
 };
 
-export default useNotionRenderFetch
+export default useNotionRenderFetch;

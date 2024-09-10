@@ -14,7 +14,7 @@ const useNavigationData = (recordMap) => {
             return {
               id: value.id,
               type: value.type,
-              text: value.properties?.title?.[0]?.[0] || ''
+              text: value.properties?.title?.[0]?.[0] || '',
             };
           }
           return null;
@@ -29,4 +29,4 @@ const useNavigationData = (recordMap) => {
   return { headers };
 };
 
-export default useNavigationData
+export default useNavigationData;

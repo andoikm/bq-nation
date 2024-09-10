@@ -7,6 +7,6 @@ const NotionRendererContainer = () => {
   if (!data) return 'Loading...';
 
   return <BQNotionRenderer recordMap={data.recordMap} />;
-}
+};
 
 export default NotionRendererContainer;

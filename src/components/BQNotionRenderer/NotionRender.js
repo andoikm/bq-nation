@@ -22,7 +22,7 @@ const BQNotionRenderer = ({ recordMap }) => {
         Pdf,
         Modal,
         Equation,
-        Collection
+        Collection,
       }}
     />
   );

@@ -1,6 +1,6 @@
 import { NOTION_PAGE_IDS } from '../../constants';
-import {syncRecordValues} from './sync-record-values';
-import {reactNotionTaskData} from './react-notion-task-data';
+import { syncRecordValues } from './sync-record-values';
+import { reactNotionTaskData } from './react-notion-task-data';
 import { simpleNotionPageData } from './simple-notion-page-data';
 
 export const mockData = {
