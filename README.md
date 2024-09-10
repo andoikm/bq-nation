@@ -1,4 +1,43 @@
-# Getting Started with Create React App
+
+# React Notion X Task
+
+This project is a simple task management application built using [react-notion-x](https://github.com/NotionX/react-notion-x), a powerful library for rendering Notion pages in React.
+
+## Features
+
+- **Notion Integration**: Render Notion pages directly in your React app.
+- **Task Management**: Add, view, and manage tasks with a clean UI.
+
+## Getting Started
+
+### Prerequisites
+
+Ensure you have the following installed on your machine:
+
+- Node.js (18+)
+- NPM or Yarn
+
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/andoikm/bq-notion.git
+cd react-notion-x-task
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Set up your Notion integration. Get your Notion API key, then create an `.env` file at the root of the project:
+
+```
+REACT_APP_NOTION_API_KEY=your_notion_api_key
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
