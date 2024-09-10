@@ -1,16 +1,10 @@
-import { NotionRenderer } from 'react-notion-x';
-import { useEffect, useState } from 'react';
-import { Code } from 'react-notion-x/build/third-party/code';
-import { Collection } from 'react-notion-x/build/third-party/collection';
-import { Equation } from 'react-notion-x/build/third-party/equation';
-import { Pdf } from 'react-notion-x/build/third-party/pdf';
-import { Modal } from 'react-notion-x/build/third-party/modal';
-import { formatNotionDataToRender } from '../utils/formatter';
-import { useParams } from 'react-router-dom';
 import { NOTION_PAGE_ID_DEPS, NOTION_PAGE_IDS } from '../constants';
+import { useParams } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 import { notionRequest } from '../api/notionRequest';
+import { formatNotionDataToRender } from '../utils/formatter';
 
-const NationRendererContainer = () => {
+const useNotionRenderFetch = () => {
   const { pageId = NOTION_PAGE_IDS.REACT_NOTION_TASK_ID } = useParams();
 
   const [data, setData] = useState(null);
@@ -46,21 +40,7 @@ const NationRendererContainer = () => {
     }
   }, [pageId]);
 
-  if (!data) return 'Loading...';
+  return {data};
+};
 
-  return <>
-    <NotionRenderer
-      recordMap={data.recordMap}
-      darkMode={true}
-      fullPage={true}
-      components={{
-        Code,
-        Collection,
-        Equation,
-        Pdf,
-        Modal
-      }} />
-  </>;
-}
-
-export default NationRendererContainer;
+export default useNotionRenderFetch
