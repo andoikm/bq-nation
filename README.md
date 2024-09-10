@@ -1,4 +1,4 @@
-# React Notion X Task
+# bq-notion Task
 
 This project is a simple task management application built using [react-notion-x](https://github.com/NotionX/react-notion-x), a powerful library for rendering Notion pages in React.
 
@@ -22,7 +22,7 @@ Ensure you have the following installed on your machine:
 
 ```bash
 git clone https://github.com/andoikm/bq-notion.git
-cd react-notion-x-task
+cd bq-notion
 ```
 
 2. Install dependencies:
